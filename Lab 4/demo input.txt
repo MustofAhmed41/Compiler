@@ -1,0 +1,29 @@
+// A program fragment 
+
+float   a =   3.125;
+double b = 3.333;
+int c; int d = 10;
+/* Definition of the
+function f1 */
+
+double f1(int p){{
+
+double e;
+e =    0.01;
+int e;
+int abc = 50;
+return e; }
+
+
+//* Beginning 
+int   main(void void){
+int f =30;  double e;
+f=15;
+c=60;
+if((f<=c){}
+f = f1();
+y = 5;
+for(;;){} 
+}}
+
+
