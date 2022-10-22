@@ -1,0 +1,101 @@
+#include <stdio.h> 
+
+void main (void) { 
+int a, b; 
+if( a+b < 5) 
+prinft("Hi"); //'+' Art-op 
+else if( (b*2) < 5 && (a/2) == 0) 
+prinft("/ is art-op.") 
+} 
+
+
+
+
+float   x1 = 3.125;;;
+/** Definition of function f1 ) */
+
+double f1(float a, int int x)
+{
+{
+{
+{
+if(x<x1)))
+if
+double z;;
+else z = 0.01;}
+else return return z;
+int a;
+else
+else
+}
+}
+
+
+
+
+#include <stdio.h>
+void main(void)
+{
+	int a, b, c;
+	float d[10],d[10], e, f[]={1.5,3.2};
+	char x,y,z;
+	scanf("%d%f%c", &a, &e, &e);
+	printf("char %c %f %f ", x, e);
+	scanf("%d%d", &b, &c);
+}
+
+
+
+
+
+
+
+
+
+
+void lexemes(char *inp, int line_number){
+    int x = 0;
+    while(x<strlen(inp)){
+        if(inp[line_number][0]==)
+    }
+}
+
+void take_input_from_console(){
+    char ch[100][100];
+    char c1;
+    char temp[100];
+    int i = 0;
+    int n = 0;
+    int eof_tracker = 0;
+    while(1){
+        gets(ch[i]);
+        if(ch[i][0]=='\0'){
+            eof_tracker++;
+            if(eof_tracker==3){
+                break;
+            }
+        }else{
+            eof_tracker = 0;
+        }
+        i++;
+        n++;
+    }
+    i = 0 ;
+    int x = 0;
+    while(1){
+        x = 0;
+        if(i>n)
+            break;
+        while(x<strlen(ch[i])){
+            printf("%c", ch[i][x]);
+            if(ch[i][x] == '+' || ch[i][x] == '-' || ch[i][x] == '*'  || ch[i][x] == '/'  )
+                lexemes(ch[i][x], i);
+            x++;
+        }
+
+        i++;
+        printf("\n");
+    }
+}
+
+

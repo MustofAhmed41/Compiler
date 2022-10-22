@@ -1,0 +1,7 @@
+1 x var global 5 
+2 f1 func global 
+3 y var f1 0 
+4 main func global 
+5 z var main 10 
+6 y var main 5 
+7 a var f1 

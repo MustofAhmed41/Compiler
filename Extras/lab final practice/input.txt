@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main(void)
+{
+int a, b, c;
+float d[10], e, f[]={1.5,3.2};
+char x,y,z;
+scanf("%d%f%c", &a, &e, &e);
+prinft("char %c float %f", x, e);
+scanf("%d%d", &b, &c);
+}
+
+

@@ -1,0 +1,58 @@
+1: #include <stdio.h>
+2: #include "myheader.h"
+3: 
+4: int printNumber(int num, FILE *p)
+5: {
+6:     char converter;
+7: 
+8:     while(num!=0)
+9:     {
+10:         int lastDigit = num%10;
+11:         num /= 10;
+12:         push(lastDigit);
+13:     }
+14: 
+15:     while(!isempty())
+16:     {
+17:         int data = pop();
+18:         converter = (char) data-208;
+19:         fputc(converter,p);
+20:     }
+21: 
+22:     fputc(':',p);
+23:     fputc(' ',p);
+24: }
+25: 
+26: int main()
+27: {
+28:     FILE *p1, *p2;
+29:     char c;
+30:     p1 = fopen("readLinebyLine.c", "r");
+31:     p2 = fopen("readLinebyLineOP.txt", "w");
+32:     int lineNumber = 0;
+33:     if(!p1)printf("\nFile can't be opened!");
+34:     else
+35:     {
+36:         //reads line by line
+37:         printNumber(++lineNumber,p2);
+38:         while((c=fgetc(p1))!=EOF)
+39:         {
+40:             fputc(c,p2);
+41:             if(c=='\n'){
+42:                 printNumber(++lineNumber,p2);
+43:             }
+44:         }
+45:     }
+46: 
+47:     fclose(p1);
+48:     fclose(p2);
+49: 
+50:     p2=fopen("readLinebyLineOP.txt", "r");
+51:     while((c=fgetc(p2)) != EOF)
+52:         printf("%c", c);
+53:     fclose(p2);
+54: 
+55: 
+56:     return 0;
+57: }
+58: 

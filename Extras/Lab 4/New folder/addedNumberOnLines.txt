@@ -1,0 +1,29 @@
+1 
+2 
+3 kw float id a op = num 3.125 sep ; 
+4 kw double id b op = num 3.333 sep ; 
+5 kw int id c sep ; kw int id d op = num 10 sep ; 
+6 
+7 
+8 
+9 kw double id f1 par ( kw int id p par ) brc { 
+10 
+11 kw double id e sep ; 
+12 id e op = num 0.01 sep ; 
+13 kw int id e sep ; 
+14 kw int id abc op = num 50 sep ; 
+15 kw return id e sep ; brc } 
+16 
+17 
+18 
+19 kw int id main par ( par ) brc { 
+20 kw int id f op = num 30 sep ; kw double id e sep ; 
+21 id f op = num 15 sep ; 
+22 id c op = num 60 sep ; 
+23 kw if par ( id f < id c par ) brc { brc } 
+24 id f op = id f1 par ( par ) sep ; 
+25 id y op = num 5 sep ; 
+26 kw for par ( sep ; sep ; par ) brc { brc } brc } 
+27 
+28 
+29 

@@ -1,0 +1,11 @@
+Duplicate token at line 3
+Duplicate token at line 3
+Duplicate token at line 5
+Duplicate token at line 7
+'else' without a previous 'if' at line 8
+Misplaced ‘}’ at line 8
+Misplaced ‘}’ at line 11
+Only two semicolon in for loop at line 16
+Expected ‘}’ at line 19
+Expected declaration of x1 at line 6
+Expected declaration of z at line 10

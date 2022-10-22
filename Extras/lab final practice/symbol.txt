@@ -1,0 +1,6 @@
+1 x1   var
+2 f1   func
+3 x1   var
+4 z    var
+5 main func
+6 n1   var

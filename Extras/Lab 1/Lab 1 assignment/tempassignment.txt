@@ -1,0 +1,66 @@
+#include <stdio.h>//hello world
+// hello world
+//  why world
+int main()
+{
+    FILE *p1, *p2;
+    char c,prev;
+    p1 = fopen("assignment2.c", "r");
+    p2 = fopen("assignment2.txt", "w"); // hello world
+    int newLine=0;
+    if(!p1)printf("\nFile can't be opened!  ");
+    else
+    {
+
+        while((c=fgetc(p1))!=EOF)
+        {
+            if(c=='\n')
+            {
+
+            }
+            else if(c==' ' && prev=='\n')
+            {
+                while((c=fgetc(p1))==' ')
+                {
+
+                }
+                fputc(c,p2);
+            }
+            else
+            {
+                ungetc(c,p1);
+                while((c=fgetc(p1))!='\n')
+                {
+                    if(c=='/'){
+                        char c1 = fgetc(p1);
+                        if(c1=='/'){
+                             while((c=fgetc(p1))!='\n'){
+
+                             }
+                             c = '\n';
+                             break;
+                        }else{
+                            fputc('/',p2);
+                            ungetc(c1,p1);
+                        }
+                    }else{
+                        fputc(c,p2);
+                    }
+                }
+            }
+            prev = c;
+        }
+    }
+
+    fclose(p1);
+    fclose(p2);
+
+    p2=fopen("assignment2.txt", "r");
+    while((c=fgetc(p2)) != EOF)
+        printf("%c",  c);
+    fclose(p2);
+
+    return   0;
+}
+
+

@@ -1,0 +1,19 @@
+1 
+2 
+3 kw float id x1 op = num 3.125 sep ; sep ; sep ; 
+4 
+5 kw double id f1 par ( kw float id a sep , kw int kw int id x par ) 
+6 brc { kw if par ( id x op < id x1 par ) 
+7 kw double id z sep ; sep ; 
+8 kw else id z op = num 0.01 sep ; brc } brc } 
+9 kw if par ( par ) sep ; 
+10 kw else kw return id z sep ; 
+11 brc } 
+12 
+13 kw int id main par ( kw void par ) 
+14 brc { brc { brc { brc { 
+15 kw int id n1 sep ; kw double id z sep ; 
+16 kw for par ( sep ; sep ; sep ; par ) 
+17 id n1 op = num 25 sep ; id z op = id f1 par ( id n1 par ) sep ; brc } 
+18 
+19 

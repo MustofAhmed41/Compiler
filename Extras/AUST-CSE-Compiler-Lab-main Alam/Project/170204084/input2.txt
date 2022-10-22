@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+#include<math.h>
+float        x1 = 3.125;;;
+/* Definition of function f1 */
+double f1(float a,int x)
+{if(x<x1)
+double z;;
+else z =           0.01;}}
+if();
+else  return z;
+}
+/* Definition of function sol
+	testing
+	 */
+float sol(int x)
+{
+	return 5.0;
+}
+/* Beginning of 'main' */
+int main()
+{
+int n1; double z;
+for(;;;);
+n1=25; z=f1(n1);	//comment
+int y = -1;
+int x  = 5+z;
+int i;
+int count  =0 ;
+for(i=0;i<x;i++)
+	count = count+1;
+
+while(count>0)
+{
+	if(count%2==0)
+		printf("count value even\n");
+	else
+	{
+		printf("count value odd\n");
+	}
+	count--;
+}
+if(count==0)
+{
+	printf("Again testing"); /* Again comment
+
+	}*/
+}
+float p = sol(x);
+p = p+ 2.9*3.8;
+x = 4*6+2-5*3/5-y+(count*i);
+return 0;
+
+}

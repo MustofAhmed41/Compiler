@@ -1,0 +1,3 @@
+To change the input file write the file name on line 1191 in the source code file.
+You can use any input file input.txt,input2.txt
+You can also add any input file.

@@ -1,0 +1,1 @@
+float a = 3.125;;;double b = 3.333;int c;int d = 10;double f1(int p){double e;e = 0.01;int e;int abc = 50;return e;}int main( ){int f =30;double e;f=15;c=60;if(f<=c){}f = f1();y = 5;for(;;){} }}

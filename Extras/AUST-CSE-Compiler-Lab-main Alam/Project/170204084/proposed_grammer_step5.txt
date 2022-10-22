@@ -1,0 +1,34 @@
+<starting>→<header><global_declare> | 
+<header>→#include<<all_header>.h><header> | 
+<all_header>→stdio | conio | ctype | math | stdlib
+<global_declare>→<var_declare><global_declare> | <func_declare><global_declare> | 
+<var_declare>→<type><asgn_stat> | <type><id>;
+<func_declare>→<return_type><id>(<parameter>)<block>
+<parameter>→<type><id>,<parameter> | <type><id> | 
+<type>→int | float | double | char 
+<return_type>→void | int | float | double | char 
+<block>→; | <stat> | {<stat>}
+<stat>→<asgn_stat><stat2> | <dscn_stat><stat2> | <loop_stat><stat2> | <var_declare><stat2> | <return_stat> |<print_stat><stat2> 
+<stat2>→<asgn_stat><stat2> | <dscn_stat><stat2> | <loop_stat><stat2> | <var_declare><stat2> | <return_stat> |<print_stat><stat2> | 
+<print_stat>→printf("<anything>");
+<anything>→any ascii character<anything> | 
+<asgn_stat>→<id>=<expn>; | <id>++; | <id>--;
+<asgn_stat2>→<id>=<expn> | <id>++ | <id>--
+<expn>→<exp><extn>
+<extn>→<relop><exp> | 
+<return_stat> return;|return<factor>;
+<dcsn_stat>→ if (<expn> ) <block> <extn1>
+<extn1>→ else <dcsn_stat> | else <block> | 
+<loop_stat>→while (<expn>) <block> | for(<asgn_stat2> ; <expn> ; <asgn_stat2> ) <block>
+<relop>→ == | != | <= | >= | > | <
+<Exp>→<Factor>+<Factor> | <Factor>-<Factor> | <Factor>*<Factor> | <Factor>/<Factor> | <Factor>%<Factor> | <Factor>
+<Factor>→(<Exp>) | ID | NUM
+<ID>→<char><str>
+<char>→a | b | ... | z | A | B | ... | Z
+<stri>→<char><stri> | <digit><stri> | 
+<digit>→ 0<digit2> | 1<digit2> | … | 9<digit2>
+<digit2>→0<digit2> | 1<digit2> | … | 9<digit2> | 
+<NUM>→<digit> | <digit>.<digit>
+
+********
+Here, Starting grammer = <starting>. Epsilon = 
